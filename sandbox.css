@@ -1,4 +1,40 @@
 /* Declare Your Styles Here */
 * {
-   
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.another-pic {
+  height: 100vh;
+  background: url("https://d12pmmbqk6r2v2.cloudfront.net/assets/images/pages/md/Invest_Farmland_md.jpg")no-repeat center center / cover;
+  position: absolute;
+  width: 100%;
+  animation: appear 10s;
+}
+
+@keyframes appear {
+   0% {
+      opacity: 0;
+   }
+   50% {
+      opacity: 1;
+   }
+   100% {
+      opacity: 1;
+      transform: rotate3d(0, 1, 0, 360deg)
+   }
+}
+
+@media only screen and (max-width: 600px) {
+  .another-pic {
+    animation: none;
+    height: 300px;
+  }
+  h1 {
+    color: green;
+  }
+
 }
